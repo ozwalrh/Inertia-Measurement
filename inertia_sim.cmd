@@ -742,7 +742,14 @@ constraint attributes  &
 simulation script create  &
    sim_script_name = .MODEL_1.Last_Sim  &
    commands =   &
-              "simulation single_run transient type=auto_select initial_static=yes end_time=5.0 step_size=( 1/200 ) model_name=.MODEL_1"
+              "simulation single_run scripted sim_script_name=.MODEL_1.SIM_SCRIPT_1 reset_before_and_after=yes model_name=.MODEL_1"
+!
+simulation script create  &
+   sim_script_name = .MODEL_1.SIM_SCRIPT_1  &
+   type = dynamic  &
+   initial_static = yes  &
+   step_size = 5.0E-03  &
+   end_time = 5.0
 !
 !---------------------------------- Accgrav -----------------------------------!
 !
