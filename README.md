@@ -2,7 +2,7 @@
 
 Use the python script 'inertia_computation.py'
 
-The extracted data from the simulation is in the 'inertia_sim_data_202505261.tab' file
+The extracted data from the simulation is in the 'inertia_sim_data_202505262.tab' file
 
 To get the data from a simulation:
 
